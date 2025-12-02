@@ -1,0 +1,66 @@
+* {
+    font-family: "Poppins" sans-serif;
+}
+
+#Test {
+    margin: auto;
+    margin-top: 200px;
+    font-size: 55px;
+    text-align: center !important; 
+    font-weight: 500; 
+    line-height: 1.2; 
+}
+        
+.home {
+    margin-bottom: 300px;
+} 
+
+.collapse-menu {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.collapse-menu.open {
+    max-height: 500px;
+}
+
+.Logo {
+    width: 15%;
+}
+
+.Logo2 {
+    width: 70%;
+}
+
+.Logo3 {
+    width: 40%;
+}
+@media screen and (max-width: 768px) {
+    #Test {
+        margin-top: 100px; 
+        font-size: 32px; 
+        text-align: center !important; 
+    }
+    .Lorem {
+        font-size: 14px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .button-group {
+        width: 100%;
+        justify-content: center !important;
+    }
+
+    .Logo {
+        width: 50%;
+    }
+
+    .Logo2 {
+        width: 100%;
+    }
+
+    .Login {
+        width: 10%;
+    }
+}

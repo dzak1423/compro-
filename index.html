@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Dist/css/style.css">
+</head>
+<body class="bg-gray-100 pt-20 font-sans" id="body">
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 right-0 z-50 p-4"> 
+    <div class="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl lg:py-0">     
+        <div class="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8"> 
+            <div class="Logo">
+                <img src="Asset/icons/visi.png" alt="Compro Logo">
+            </div>
+            
+
+            <div class="hidden lg:flex lg:space-x-8 items-center text-sm font-medium">
+                <a href="#body" class="text-gray-900 hover:text-primary-blue transition duration-150 py-4">Home</a>
+                <a href="#About" class="text-gray-900 hover:text-primary-blue transition duration-150 py-4">About</a>
+                <a href="#Services" class="text-gray-900 hover:text-primary-blue transition duration-150 py-4">Services</a>
+                <a href="#Contact" class="text-gray-900 hover:text-primary-blue transition duration-150 py-4">Contact</a>
+            </div>  
+            
+            <div class="flex items-center space-x-4">
+                <button id="nav-get-started" class="bg-primary-blue hover:bg-blue-700 text-white text-sm font-medium py-2 px-5 rounded-xl shadow-lg shadow-blue-300/50 transition duration-300 transform hover:scale-[1.02] active:scale-[0.98] hidden lg:block">
+                    Get Started
+                </button>
+                <button id="menu-toggle" class="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition duration-150" aria-label="Toggle Menu">
+                    <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="collapse-menu lg:hidden">
+            <div class="pt-2 pb-3 space-y-1 border-t border-gray-100 px-4">
+                <a href="#Home" class="block px-3 py-2 text-base font-medium text-gray-700 bg-blue-50/50 rounded-lg">Home</a>
+                <a href="#About" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">About</a>
+                <a href="#Services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">Services</a>
+                <a href="#Contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">Contact</a>
+                <button id="mobile-get-started" class="w-full mt-2 bg-primary-blue hover:bg-blue-700 text-white text-base font-medium py-2 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.01] active:scale-[0.99]">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Home -->
+<div class="home" id="Home">
+    <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center px-4">
+        <h2 id="Test" class="text-gray-900">
+            Transforming Ideas Into <br> Digital Reality
+        </h2>   
+        <p class="Lorem mt-8 text-lg text-secondary-gray max-w-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation.
+        </p> 
+        <div class="mt-8 space-x-4 flex justify-center flex-wrap">
+            <button id="home-get-started" class="bg-primary-blue hover:bg-blue-700 text-white text-base font-medium py-4 px-7 rounded-xl shadow-lg shadow-blue-300/50 transition duration-300 transform hover:scale-[1.02] active:scale-[0.98] mb-4">
+                Get Started Today
+            </button> 
+            <button class="bg-primary-white text-dark-text border-2 border-gray-300 text-base font-medium py-4 px-7 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02] active:scale-[0.98] mb-4">
+                View Our Work
+            </button>
+        </div>
+    </div>
+</div>
+<!-- About -->
+<div class="About" id="About">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="bg-white rounded-3xl shadow-xl p-6 lg:p-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+                <div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2 relative">
+
+                            <div class="aspect-[4/3] rounded-2xl overflow-hidden">
+                                <img src="Asset/images/about-14.webp" 
+                                             class="w-full h-full object-cover" 
+                                             alt="Professional working on a laptop, representing expertise.">
+                            </div>
+                            <div class="Years absolute top-6 right-6 bg-white text-primary-blue p-4 rounded-xl shadow-md text-center">
+                                <strong class="text-2xl font-bold block leading-none">8+</strong>
+                                <small class="uppercase text-xs font-semibold tracking-wider block mt-1">Years of Experience</small>
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="aspect-[4/3] rounded-xl overflow-hidden">
+                                <img src="Asset/images/about-3.webp" 
+                                             class="w-full h-full object-cover" 
+                                             alt="Diverse team meeting.">
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="aspect-[4/3] rounded-xl overflow-hidden">
+                                <img src="Asset/images/about-7.webp" 
+                                             class="w-full h-full object-cover" 
+                                             alt="Team celebrating success with high fives.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:pt-2">
+                    <h2 class="text-dark-text text-4xl mb-6 leading-tight font-bold">
+                        Building tomorrow's solutions with proven expertise and innovation
+                    </h2>
+                    <p class="text-secondary-gray text-base mb-8">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                        totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
+                        sunt explicabo.
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-light-blue-bg text-primary-blue p-3 rounded-full mr-4 text-xl">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <div class="text-dark-text text-lg font-semibold mb-1">Strategic Growth</div>
+                                <p class="text-secondary-gray text-sm">
+                                    Exceptetur sint occaecati cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-light-blue-bg text-primary-blue p-3 rounded-full mr-4 text-xl">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div>
+                                <div class="text-dark-text text-lg font-semibold mb-1">Expert Team</div>
+                                <p class="text-secondary-gray text-sm">
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-10 flex-wrap">
+                        <button class="bg-primary-blue hover:bg-blue-700 text-white text-base font-medium py-4 px-8 rounded-xl shadow-lg shadow-blue-500/50 transition duration-300 transform hover:scale-[1.02] active:scale-[0.98] mr-8 mb-4 lg:mb-0">
+                            Learn More About Us
+                        </button>
+                        <div class="ml-0 lg:ml-4 leading-tight">
+                            <span class="text-secondary-gray text-sm block font-medium">Call us directly:</span>
+                            <span class="text-primary-blue text-lg font-bold block">+62 853-8510-4401</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Services -->
+<div class="Services" id="Services">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <div class="text-center mb-12">
+            <div class="text-primary-blue font-bold uppercase py-1 px-3 tracking-wider inline-block">
+                <h1 class="text-xl">Services</h1>
+            </div>
+            <p class="text-secondary-gray mt-4 text-base max-w-3xl mx-auto">
+                Necessitatibus eius consequatur ex aliquid fuga enim sint consectetur velit. Sed ut perspiciatis 
+                unde omnis iste natus error sit voluptatem accusantium doloremque laudantium rerum rem aperiam.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-1 bg-white border-2 border-primary-blue/50 rounded-3xl shadow-xl p-8 flex flex-col items-center text-center relative overflow-hidden">
+                
+                <div class="absolute top-0 left-0 bg-primary-blue text-white text-xs font-bold uppercase py-1 px-4 rounded-br-2xl shadow-md">
+                    Most Popular
+                </div>
+
+                <div class="bg-primary-blue text-white p-6 rounded-3xl shadow-lg mb-6 text-3xl">
+                    <i class="fa-solid fa-rocket" ></i>
+                </div>
+
+                <h3 class="text-dark-text text-2xl font-bold mb-3">Automated Workflows</h3>
+                <p class="text-secondary-gray text-sm mb-8 flex-grow">
+                    Streamline your business processes with intelligent automation that saves time and reduces human error. Perfect for scaling teams.
+                </p>
+
+                <ul class="space-y-4 text-left w-full max-w-xs mb-8">
+                    <li class="flex items-center text-dark-text">
+                        <i class="fa-solid fa-circle-check text-primary-blue mr-3 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">24/7 Processing</span>
+                    </li>
+                    <li class="flex items-center text-dark-text">
+                        <i class="fa-solid fa-circle-check text-primary-blue mr-3 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">Smart Analytics</span>
+                    </li>
+                    <li class="flex items-center text-dark-text">
+                        <i class="fa-solid fa-circle-check text-primary-blue mr-3 flex-shrink-0"></i>
+                        <span class="text-sm font-medium">Easy Integration</span>
+                    </li>
+                </ul>
+
+                <button class="w-full bg-primary-blue hover:bg-blue-700 text-white text-base font-medium py-3 px-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.01] active:scale-[0.99]">
+                    Get Started Free
+                </button>
+            </div>
+
+            <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+                <div class="bg-white rounded-3xl shadow-lg p-6 lg:p-8 flex flex-col justify-between hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
+                    <div>
+                        <div class="bg-light-blue-bg text-primary-blue p-4 rounded-xl inline-block mb-4 text-2xl">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="text-dark-text text-xl font-bold mb-2">Security Solutions</h4>
+                        <p class="text-secondary-gray text-sm mb-4">
+                            Enterprise-grade security measures to protect your data and maintain compliance standards.
+                        </p>
+                    </div>
+                    <a href="#" class="text-primary-blue text-sm font-semibold flex items-center hover:text-blue-700 transition duration-150">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-3xl shadow-lg p-6 lg:p-8 flex flex-col justify-between hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
+                    <div>
+                        <div class="bg-light-blue-bg text-primary-blue p-4 rounded-xl inline-block mb-4 text-2xl">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                        <h4 class="text-dark-text text-xl font-bold mb-2">Performance Analytics</h4>
+                        <p class="text-secondary-gray text-sm mb-4">
+                            Real-time insights and comprehensive reporting to optimize your business performance.
+                        </p>
+                    </div>
+                    <a href="#" class="text-primary-blue text-sm font-semibold flex items-center hover:text-blue-700 transition duration-150">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-lg p-6 lg:p-8 flex flex-col justify-between hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
+                    <div>
+                        <div class="bg-light-blue-bg text-primary-blue p-4 rounded-xl inline-block mb-4 text-2xl">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+                        <h4 class="text-dark-text text-xl font-bold mb-2">Team Collaboration</h4>
+                        <p class="text-secondary-gray text-sm mb-4">
+                            Seamless collaboration tools that bring your team together regardless of location.
+                        </p>
+                    </div>
+                    <a href="#" class="text-primary-blue text-sm font-semibold flex items-center hover:text-blue-700 transition duration-150">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-3xl shadow-lg p-6 lg:p-8 flex flex-col justify-between hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
+                    <div>
+                        <div class="bg-light-blue-bg text-primary-blue p-4 rounded-xl inline-block mb-4 text-2xl">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+                        <h4 class="text-dark-text text-xl font-bold mb-2">Cloud Integration</h4>
+                        <p class="text-secondary-gray text-sm mb-4">
+                            Flexible cloud solutions that scale with your business needs and requirements.
+                        </p>
+                    </div>
+                    <a href="#" class="text-primary-blue text-sm font-semibold flex items-center hover:text-blue-700 transition duration-150">
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact -->
+<div class="Contact" id="Contact">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <div class="text-center mb-12">
+            <div class="text-primary-blue font-bold uppercase py-1 px-3 tracking-wider inline-block">
+                <h1 class="text-xl">Contact us!</h1>
+            </div>
+            <p class="text-secondary-gray mt-4 text-base max-w-3xl mx-auto">
+                We're ready to answer any questions you have and discuss your next project. 
+                Fill out the form below or use our direct contact methods.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-6 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
+            
+
+            <div class="space-y-8">
+
+                <h3 class="text-2xl font-bold text-dark-text">Our Information</h3>
+                <p class="text-secondary-gray">
+                    Visit us during business hours or reach out via email/phone anytime. We aim to respond within 24 hours.
+                </p>
+
+                <div class="space-y-6">
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-primary-blue/10 text-primary-blue p-3 rounded-full mr-4 text-xl">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div>
+                            <div class="text-dark-text text-lg font-semibold mb-1">Office Address</div>
+                            <p class="text-secondary-gray text-sm">
+                                Gg. Kelor No.20 RT02/09 <br>
+                                Menteng Kota Bogor
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-primary-blue/10 text-primary-blue p-3 rounded-full mr-4 text-xl">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="text-dark-text text-lg font-semibold mb-1">Email Us</div>
+                            <a href="mailto:Maulidinawan53@gmail.com" class="text-primary-blue hover:underline text-sm font-medium">Maulidinawan53@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-primary-blue/10 text-primary-blue p-3 rounded-full mr-4 text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <div class="text-dark-text text-lg font-semibold mb-1">Call Us</div>
+                            <a href="tel:+6285385104401" class="text-primary-blue hover:underline text-sm font-medium">+62 853-8510-4401</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:pl-8">
+                <h3 class="text-2xl font-bold text-dark-text mb-6">Send a Message</h3>
+                <form action="#" method="POST" class="space-y-4">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="contact-name" class="sr-only">Full Name</label>
+                            <input type="text" name="name" id="contact-name" placeholder="Your Full Name" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-primary-blue focus:border-primary-blue transition duration-150 text-sm">
+                        </div>
+                        <div>
+                            <label for="contact-email" class="sr-only">Email Address</label>
+                            <input type="email" name="email" id="contact-email" placeholder="Your Email Address" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-primary-blue focus:border-primary-blue transition duration-150 text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact-message" class="sr-only">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Your Message" required
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-primary-blue focus:border-primary-blue transition duration-150 text-sm"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                                class="w-full bg-primary-blue hover:bg-blue-700 text-white text-base font-medium py-3 rounded-xl shadow-lg shadow-blue-500/50 transition duration-300 transform hover:scale-[1.01] active:scale-[0.99]">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login -->
+<div class="Login">
+    <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100] hidden transition-opacity duration-300 opacity-0">
+      <div class="bg-white p-12 rounded-3xl shadow-2xl w-full max-w-md mx-4 transform transition-all duration-300 scale-95" id="login-modal-content">
+        <div class="flex flex-col items-center">
+            <div class="Logo2">
+                <img src="Asset/icons/visi.png" alt="Compro Logo">
+            </div>
+            
+            <h4 class="text-xl font-heavy text-black text-center mb-8 leading-snug">
+                Artificial Intelligence Driving  Results For The Travel Industry
+            </h4>
+            
+            <p class="text-sm text-gray-700 mb-6">Welcome back! Please login to your account.</p>
+            
+            <form class="w-full space-y-4">
+                
+                <input type="email" placeholder="Email Address" 
+                       class="w-full px-5 py-3.5 border border-gray-300 rounded-lg focus:outline-none focus:border-[1.5px] focus:border-gray-400 text-sm"
+                       aria-label="Email Address">
+                
+                <input type="password" placeholder="Password" 
+                       class="w-full px-5 py-3.5 border border-gray-300 rounded-lg focus:outline-none focus:border-[1.5px] focus:border-gray-400 text-sm"
+                       aria-label="Password">
+                
+                <div class="text-right pt-2">
+                    <a href="#" class="text-sm text-gray-500 hover:text-gray-700 transition duration-150">Forgot Password?</a>
+                </div>
+                
+                <div class="flex space-x-4 pt-8">
+                    <button type="submit"
+                            class="flex-1 bg-primary-blue text-white text-base font-medium py-3 rounded-xl shadow-lg shadow-[#254CE3]/30 transition duration-300 transform hover:scale-[1.01] active:scale-[0.99] border-2 border-[#254CE3]">
+                        Login
+                    </button>
+                    <button type="button"
+                            class="flex-1 text-[#254CE3] border-2 border-[#254CE3] text-base font-medium py-3 rounded-xl bg-white hover:bg-blue-50 transition duration-300 transform hover:scale-[1.01] active:scale-[0.99]">
+                        Sign Up
+                    </button>
+                </div>
+            </form>
+        </div>
+     </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 border-b border-gray-200 pb-16 mb-8">
+            
+            <div class="lg:col-span-2">
+                <img src="Asset/icons/visi.png" alt="Compro Logo" class="Logo3">
+                <p class="text-sm text-gray-500 mb-8 max-w-sm">
+                    Crafting exceptional digital experiences through thoughtful design and innovative solutions that elevate your brand presence.
+                </p>
+                
+                <address class="not-italic space-y-3 text-sm">
+                    <div class="flex items-center text-gray-500">
+                        <i class="fa-solid fa-map-marker-alt w-4 mr-3 text-primary-blue"></i>
+                        <span>Gg. Kelor No.20 RT02/09 Menteng Kota Bogor</span>
+                    </div>
+                    <div class="flex items-center text-gray-500">
+                        <i class="fa-solid fa-phone w-4 mr-3 text-primary-blue"></i>
+                        <a href="tel:+15559876543" class="hover:text-primary-blue transition duration-150">+62 853-8510-4401</a>
+                    </div>
+                    <div class="flex items-center text-gray-500">
+                        <i class="fa-solid fa-envelope w-4 mr-3 text-primary-blue"></i>
+                        <a href="mailto:hello@designstudio.com" class="hover:text-primary-blue transition duration-150">Maulidinawan53@gmail.com</a>
+                    </div>
+                </address>
+            </div>
+
+            <div>
+                <h4 class="text-base font-semibold text-gray-900 mb-5">Studio</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Our Story</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Design Process</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Portfolio</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Case Studies</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Awards</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-base font-semibold text-gray-900 mb-5">Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Brand Identity</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Web Design</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Mobile Apps</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Digital Strategy</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Consultation</a></li>
+                </ul>
+            </div>
+            
+            <div class="lg:col-start-5 lg:row-start-1">
+                <h4 class="text-base font-semibold text-gray-900 mb-5">Connect</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Start Project</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Schedule Call</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Join Newsletter</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Follow Updates</a></li>
+                    <li><a href="#" class="text-sm text-gray-500 hover:text-primary-blue transition duration-150">Partnership</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-end pt-4">
+            <div class="text-xs text-gray-500 flex flex-col sm:flex-row justify-between lg:justify-end items-start sm:items-center space-y-2 sm:space-y-0 lg:space-x-8">
+                <span class="order-2 sm:order-1">
+                    &copy; <span class="text-gray-900 font-semibold">Dzakwan</span>. All rights reserved.
+                </span>
+                <div class="flex space-x-4 order-1 sm:order-2">
+                    <a href="#" class="hover:text-primary-blue transition duration-150">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary-blue transition duration-150">Terms of Service</a>
+                </div>
+            </div>
+            
+            <div class="text-xs">
+                Designed by <a href="#" class="text-primary-blue hover:underline">BootstrapMade</a>
+            </div>
+            
+        </div>
+
+    </div>
+</footer>
+</body>
+<!-- Js -->
+<script src="Dist/js/script.js"></script>
+</html>
